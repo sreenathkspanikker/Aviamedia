@@ -1,0 +1,66 @@
+.btn {
+    transition: all ease .2s;
+    outline: none !important;
+
+    &.btn-primary {
+        border: 1px solid var(--primary);
+        background-color: var(--primary);
+        color: var(--neutral--100);
+        text-align: center;
+        border-radius: 16px;
+        justify-content: center;
+        padding: 26px 38px;
+        font-weight: 700;
+        line-height: 1.111em;
+        text-decoration: none;
+        transition: color .3s, background-color .3s, border-color .3s;
+
+        &:hover {
+            border-color: var(--secondary--color-1);
+            background-color: var(--secondary--color-1);
+            color: var(--neutral--100);
+        }
+    }
+
+    &.btn-secondary {
+        border: 1px solid var(--neutral--300);
+        background-color: var(--neutral--100);
+        box-shadow: 0 2px 6px 0 var(--button-shadow--white-01);
+        color: var(--neutral--800);
+        text-align: center;
+        border-radius: 16px;
+        padding: 26px 38px;
+        font-weight: 500;
+        line-height: 1.111em;
+        transition: border-color .3s, background-color .3s, color .3s;
+
+        &:hover {
+            border-color: var(--primary);
+            background-color: var(--primary);
+            color: var(--neutral--100);
+        }
+    }
+}
+
+.btn-group {
+    .btn {
+        border-radius: 16px !important;
+        margin-right: 18px;
+        display: flex;
+        align-items: center;
+
+        svg {
+            width: 20px;
+            height: 24px;
+            margin-right: 10px;
+
+            path {
+                fill: white;
+            }
+        }
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,92 @@
+@mixin textStyle($stroke-size, $size, $shadow) {
+  color: var(--primaryText);
+  text-shadow: 0px $shadow 0px #7A33C1;
+  font-size: $size;
+  font-weight: 400;
+  text-stroke: $stroke-size var(--secondary);
+  -webkit-text-stroke: $stroke-size var(--secondary);
+  -moz-text-stroke: $stroke-size var(--secondary);
+}
+
+// center element
+@mixin positioCenter {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+// bg light
+@mixin bgLightBig {
+  width: 1331px;
+  height: 1336px;
+  border-radius: 1336px;
+  opacity: 0.6;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(122, 51, 193, 0.34) 0%, rgba(122, 51, 193, 0.00) 100%);
+  @include pulseLightanime;
+}
+
+// pulse animation
+@mixin pulseLightanime {
+  animation: pulsating-glow 6s linear infinite;
+
+  @keyframes pulsating-glow {
+    0% {
+      opacity: 0.3;
+    }
+
+    30% {
+      opacity: 0.7;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    70% {
+      opacity: 0.7;
+    }
+
+    100% {
+      opacity: 0.3;
+    }
+  }
+}
+
+
+// line clamp
+@mixin lineLimit ($line) {
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+// pulse text animation shadow
+@mixin pulseShadow {
+  animation: pulseWave 2s infinite ease-in-out;
+
+  @keyframes pulseWave {
+    0% {
+      box-shadow: 0 0 10px 0 var(--primary);
+    }
+
+    25% {
+      box-shadow: 0 0 20px 0 var(--primary);
+    }
+
+    50% {
+      box-shadow: 0 0 30px 0 var(--primary);
+    }
+
+    75% {
+      box-shadow: 0 0 10px 0 var(--primary);
+    }
+
+    100% {
+      box-shadow: 0 0 0 0 var(--primary);
+    }
+  }
+}

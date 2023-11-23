@@ -1,0 +1,33 @@
+{
+  "name": "test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "bootstrap": "^5.3.2",
+    "gsap": "^3.12.2",
+    "lottie-react": "^2.4.0",
+    "next": "14.0.1",
+    "react": "^18",
+    "react-bootstrap": "^2.9.1",
+    "react-countup": "^6.5.0",
+    "react-dom": "^18",
+    "resend": "^2.0.0",
+    "scrolltrigger": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.1",
+    "sass": "^1.69.5",
+    "typescript": "^5"
+  }
+}

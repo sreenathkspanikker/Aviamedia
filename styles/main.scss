@@ -1,0 +1,23 @@
+@import '~bootstrap/scss/bootstrap';
+
+
+// core & mixins
+@import 
+    './core/reset', 
+    './core/common', 
+    './mixins/mixin',
+    './utils/animations'; 
+
+// component
+@import 
+'./components/title', 
+'./components/button', 
+'./components/header', 
+'./components/footer',
+'./components/mainframe'; 
+
+// page
+@import 
+    './page/home',
+    './page/error', 
+    './page/not-found';

@@ -1,0 +1,126 @@
+// Reset CSS
+
+:root {
+  --neutral--600: #656565;
+  --neutral--800: #121212;
+  --primary: #ff5634;
+  --secondary--color-2: #fff5f1;
+  --neutral--300: #ededed;
+  --general--shadow-01: rgba(20, 20, 43, .06);
+  --neutral--200: #fafafa;
+  --neutral--100: white;
+  --general--shadow-02: rgba(16, 16, 16, .08);
+  --general--shadow-04: rgba(16, 16, 16, .14);
+  --secondary--color-1: #e13f1f;
+  --neutral--700: #3f3f3f;
+  --neutral--500: #929292;
+  --neutral--400: #cacaca;
+  --system--green-400: #11845b;
+  --system--blue-400: #086cd9;
+  --system--blue-300: #1d88fe;
+  --system--blue-200: #8fc3ff;
+  --system--blue-100: #eaf4ff;
+  --system--green-300: #05c168;
+  --system--green-200: #7fdca4;
+  --system--green-100: #def2e6;
+  --system--red-400: #dc2b2b;
+  --system--300: #ff5a65;
+  --system--red-200: #ffbec2;
+  --system--red-100: #ffeff0;
+  --system--orange-400: #d5691b;
+  --system--orange-300: #ff9e2c;
+  --system--orange-200: #ffd19b;
+  --system--orange-100: #fff3e4;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+ul,
+ol,
+li,
+table,
+thead,
+tbody,
+tr,
+th,
+td,
+form,
+input,
+button, 
+figure {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent;
+  font-family: var(--font-metropolis);
+}
+
+body {
+  color: var(--neutral--600);
+  font-family: var(--font-metropolis);
+  background-color: var(--neutral--200);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.667em;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-weight: 300;
+  color: var(--neutral--600);
+}
+
+img{
+  margin: 0;
+}
+
+// Usage example
+button {
+  background-color: var(--primary);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.section {
+  padding: 50px 0;
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.container{
+  max-width: 1270px;
+}
+

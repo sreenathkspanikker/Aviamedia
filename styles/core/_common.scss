@@ -1,0 +1,21 @@
+.title-wrap{
+    
+    h2 {
+        color: var(--neutral--800);
+        margin-top: 0;
+        margin-bottom: 16px;
+        font-size: 62px;
+        font-weight: 700;
+        line-height: 1.161em;
+    }
+
+    h5 {
+        margin-bottom: 22px;
+        letter-spacing: .06em;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.111em;
+        color: var(--primary);
+    }
+}
